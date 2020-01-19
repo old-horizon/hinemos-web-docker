@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  hinemos-web:
+    build:
+      context: .
+    image: hinemos-web:5.0.2
+    container_name: hinemos-web
+    ports:
+     - "$HINEMOS_PORT:80"
+    privileged: true
